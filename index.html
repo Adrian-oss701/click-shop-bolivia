@@ -13,14 +13,13 @@
 
     <style>
         :root {
-            /* Paleta Moderna: Minimalismo Tech */
-            --primary: #09090b; /* Negro Zinc */
-            --primary-dark: #000000; /* Negro Puro */
-            --accent: #4f46e5; /* Índigo Eléctrico Moderno */
+            --primary: #09090b; 
+            --primary-dark: #000000;
+            --accent: #4f46e5;
             --accent-hover: #4338ca;
             --whatsapp: #25d366;
             --bg-light: #fafafa;
-            --card-radius: 12px; /* Bordes un poco más rectos y agresivos */
+            --card-radius: 12px; 
         }
 
         html { scroll-behavior: smooth; }
@@ -28,13 +27,11 @@
         body { font-family: 'Inter', sans-serif; background-color: var(--bg-light); color: var(--primary); overflow-x: hidden; }
         h1, h2, h3, h4, .brand-font { font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: -0.03em; }
 
-        /* NAVBAR PREMIUM MINIMALISTA */
         .navbar { padding: 18px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
         .brand-container { line-height: 1; display: flex; flex-direction: column; justify-content: center; }
         .brand-main { font-size: 1.5rem; color: var(--primary-dark); font-weight: 900; letter-spacing: -1.5px; }
         .brand-sub { font-size: 0.65rem; color: var(--accent); letter-spacing: 4px; text-transform: uppercase; font-weight: 700; }
         
-        /* HERO SECTION ESTILO STARTUP */
         .hero { position: relative; min-height: 80vh; background: var(--primary-dark); display: flex; align-items: center; overflow: hidden; padding-top: 100px; padding-bottom: 50px; color: white; }
         .hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(79,70,229,0.15) 0%, rgba(0,0,0,0) 50%); z-index: 0; pointer-events: none; }
         
@@ -45,19 +42,16 @@
         .btn-main { background: var(--accent); color: white; padding: 15px 40px; border-radius: 8px; font-weight: 600; text-transform: uppercase; border: none; transition: all 0.3s ease; text-decoration: none; display: inline-block; letter-spacing: 1px; }
         .btn-main:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3); color: white; }
 
-        /* SECCIÓN DE BENEFICIOS */
         .features-section { position: relative; z-index: 2; margin-top: -30px; padding-bottom: 40px; }
         .feature-box { background: white; padding: 30px 20px; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.03); height: 100%; transition: 0.3s; }
         .feature-box:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(79, 70, 229, 0.1); }
         .feature-icon { width: 50px; height: 50px; background: #eef2ff; color: var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; margin: 0 auto 15px; }
 
-        /* HEADER DE SECCIÓN */
         section, div[id] { scroll-margin-top: 100px; } 
         .section-header { margin-top: 20px; margin-bottom: 40px; text-align: center; }
         .section-header h2 { font-size: 2.5rem; color: var(--primary-dark); }
         .section-header p { color: #6b7280; font-weight: 500; }
 
-        /* PRODUCT CARDS: ESTILO SNEAKER STORE */
         .product-card { background: white; border-radius: var(--card-radius); border: 1px solid #e5e7eb; transition: all 0.3s ease; position: relative; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05); border-color: #d1d5db; }
         
@@ -72,16 +66,9 @@
 
         .btn-wpp-card { background: var(--primary-dark); color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.95rem; transition: 0.3s; width: 100%; margin-top: auto; }
         .btn-wpp-card:hover { background: var(--accent); color: white; }
-        .btn-wpp-card i { color: var(--whatsapp); } /* El ícono mantiene su color verde característico */
+        .btn-wpp-card i { color: var(--whatsapp); }
         .btn-wpp-card:hover i { color: white; }
 
-        /* ESTADO AGOTADO */
-        .product-card.agotado .img-container img { filter: grayscale(100%); opacity: 0.4; }
-        .product-card.agotado::after { content: "SOLD OUT"; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); background: var(--primary-dark); color: white; padding: 8px 20px; font-size: 1rem; font-weight: 800; letter-spacing: 2px; z-index: 10; pointer-events: none; }
-        .product-card.agotado .btn-wpp-card { background: #f3f4f6; color: #9ca3af; pointer-events: none; }
-        .product-card.agotado .btn-wpp-card i { color: #9ca3af; }
-
-        /* FOOTER */
         footer { background: var(--primary-dark); color: #9ca3af; padding: 50px 0 30px; text-align: center; margin-top: 60px; }
         
         .float-wpp { position: fixed; bottom: 30px; right: 30px; background: var(--primary-dark); color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 1000; transition: transform 0.3s; text-decoration: none; border: 2px solid #333;}
@@ -201,7 +188,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                 <div class="product-card">
                     <div class="img-container" onclick="openImage('imagenes/C 1.png')">
-                        <img loading="lazy" src="imagenes/C 1.png" alt="Trekker Black">
+                        <img loading="lazy" src="imagenes/C 3.jpeg" alt="Trekker Black">
                     </div>
                     <div class="card-details">
                         <div class="product-name">Trekker Black</div>
@@ -215,7 +202,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="product-card">
                     <div class="img-container" onclick="openImage('imagenes/C 2.jpeg')">
-                        <img loading="lazy" src="imagenes/C 2.jpeg" alt="Desert Sand">
+                        <img loading="lazy" src="imagenes/C 4.jpeg" alt="Desert Sand">
                     </div>
                     <div class="card-details">
                         <div class="product-name">Desert Sand</div>
@@ -229,7 +216,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
                 <div class="product-card">
                     <div class="img-container" onclick="openImage('imagenes/C 1.png')">
-                        <img loading="lazy" src="imagenes/C 1.png" alt="Alpine Pro">
+                        <img loading="lazy" src="imagenes/C 5.jpeg" alt="Alpine Pro">
                     </div>
                     <div class="card-details">
                         <div class="product-name">Alpine Pro</div>
@@ -243,7 +230,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <div class="product-card">
                     <div class="img-container" onclick="openImage('imagenes/C 2.jpeg')">
-                        <img loading="lazy" src="imagenes/C 2.jpeg" alt="City Walker">
+                        <img loading="lazy" src="imagenes/C 6.png" alt="City Walker">
                     </div>
                     <div class="card-details">
                         <div class="product-name">City Walker</div>
@@ -257,7 +244,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <div class="product-card">
                     <div class="img-container" onclick="openImage('imagenes/C 2.jpeg')">
-                        <img loading="lazy" src="imagenes/C 2.jpeg" alt="City Walker">
+                        <img loading="lazy" src="imagenes/C 7.png" alt="City Walker">
                     </div>
                     <div class="card-details">
                         <div class="product-name">City Walker</div>
@@ -268,15 +255,13 @@
                 </div>
             </div>
 
-            
-
         </div>
     </div>
 
     <footer>
         <div class="container">
             <h4 class="text-white mb-2 brand-font">AC STORE</h4>
-            <p class="small mb-0">Operando en La Paz, Bolivia.</p>
+            <p class="small mb-0" style="opacity: 0.7">Operando en La Paz, Bolivia.</p>
             <p class="small mt-4 mb-0" style="opacity: 0.7">&copy; 2026 AC Store. Todos los derechos reservados.</p>
         </div>
     </footer>
